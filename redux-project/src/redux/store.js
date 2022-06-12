@@ -1,5 +1,5 @@
 import {creactStore } from "redux";
-import redusers from './redux/redusers/index'
+import redusers from './redusers/index'
 const store = creactStore(
   redusers,
   {},
