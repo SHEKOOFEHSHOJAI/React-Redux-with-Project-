@@ -15,7 +15,7 @@ const ProductDetail = () => {
     state.product
   );
   
- const {title, image, price, categery, description } = product;
+ const { image, title, price, categery, description } = product;
 
   const {productId}=useParams();
 
