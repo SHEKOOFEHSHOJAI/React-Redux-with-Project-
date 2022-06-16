@@ -22,10 +22,21 @@ const ProductDetail = () => {
        });
        dispach(selectedProduct(response.data));
   }
-   
+   useEffect(()=>{
+
+     if(productId && productId !=="")fetchProductDetail();
+
+   })
   return (
-    <div>
-      <h1>ProductComponent</h1>
+    <div className="ui grid container">
+      <div className=" ui placeholder segment">
+        <div>
+          
+        </div>
+
+
+      </div>
+      
     </div>
   );
 };

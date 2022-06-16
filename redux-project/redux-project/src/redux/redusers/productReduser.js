@@ -24,9 +24,10 @@ export const selectorProductReduser=(state={},{type,payload})=>{
   switch (type) {
     case ActionTypes.SELECTED_PRODUCT:
       
-      break;
+      return{...state,...payload};
   
     default:
-      break;
+     return state
+        
   }
 }
