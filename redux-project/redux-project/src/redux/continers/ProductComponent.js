@@ -7,7 +7,7 @@ const ProductComponent = () => {
    console.log(products);
 
    const renderList=products.map((product)=>{
-     const { id, title ,image,price,categery} = product;
+     const { id, title ,image,price,category} = product;
 
     return (
       <div className="four wide column" key={id}>
@@ -20,11 +20,11 @@ const ProductComponent = () => {
             <div className="content">
               <div className="header">{title}</div>
               <div className="meta price">${price}</div>
-              <div className="meta">{categery}</div>
+              <div className="meta">{category}</div>
             </div>
           </div>
         </div>
-        </Link>
+    </Link>
       </div>
     );
   })
