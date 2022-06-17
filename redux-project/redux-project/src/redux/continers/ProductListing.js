@@ -8,9 +8,9 @@ import axios from 'axios';
 import { useEffect } from "react";
 
 const ProductListing=()=>{
-    const products=useSelector((state)=>state);
+    const products = useSelector((state) => state);
 
-    const dispach=useDispatch();
+    const dispatch=useDispatch();
 
      const fetchProducts=async()=>{
       
@@ -20,12 +20,13 @@ const ProductListing=()=>{
           console.log("error", error);
         });
         //send data to 
-      dispach(setProducts(response.data));
+      dispatch(setProducts(response.data));
      }
 
      useEffect(()=>{
       fetchProducts();
-     },[])
+     },[]);
+     
      console.log("proooooooo",products);
     return(
       <div className="ui grid continer">
@@ -36,3 +37,8 @@ const ProductListing=()=>{
     )
 }
 export default ProductListing;
+
+//https://www.youtube.com/watch?v=kK_Wqx3RnHk
+//https://www.youtube.com/watch?v=0ZJgIjIuY7U
+//https://www.youtube.com/watch?v=FUKpWgRyPlU
+//https://www.youtube.com/watch?v=tQ80uAyqVyI&list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK&index=28

@@ -11,13 +11,14 @@ import {
 //GET PRODUCT
 
 const ProductDetail = () => {
+  const {productId}=useParams();
+  
   const product = useSelector((state) => 
     state.product
   );
   
  const { image, title, price, categery, description } = product;
 
-  const {productId}=useParams();
 
   //SEND  TO SELECTEDPRODUCT IN ACTIONTYPE
 
