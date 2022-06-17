@@ -3,13 +3,19 @@
   padding: 0;
   margin: 0;
 }
-
+.ui.cards > .card {
+  margin: 30% 40%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  row-gap: 0.5rem;
+}
 .ui.cards > .card > .image {
   height: 250px;
   padding: 20px;
   background: #fff;
   margin: auto;
-}
+  
+} 
 .ui.cards > .card > .image > img {
   height: 100%;
   max-width: 100%;
