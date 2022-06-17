@@ -3,11 +3,24 @@
   padding: 0;
   margin: 0;
 }
+.cards{
+   /* display: grid;  */
+/* width: 60%; */
+
+   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+}
+
+
 .ui.cards > .card {
-  margin: 30% 40%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
-  row-gap: 0.5rem;
+  margin-top: 30% ;
+ 
+  /* grid-template-columns: 1fr 250px; */
+  /* grid-template-columns:auto; */
+ 
+  /* row-gap: 1rem; */
+}
+@media screen {
+  
 }
 .ui.cards > .card > .image {
   height: 250px;
@@ -46,10 +59,12 @@
 .ui.menu.fixed {
   height: 60px;
   padding-top: 15px;
+   
 }
 
 .ui.grid.container {
   margin-top: 45px;
+ 
 }
 
 .ui.grid > .row {
